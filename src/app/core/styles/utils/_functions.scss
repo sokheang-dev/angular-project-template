@@ -1,0 +1,13 @@
+@function high-contrast-value($light, $dark, $theme-type) {
+  @if ($theme-type == light) {
+    @return $light;
+  }
+  @if ($theme-type == dark) {
+    @return $dark;
+  }
+  @if ($theme-type == color-scheme) {
+    @return light-dark(#{$light}, #{$dark});
+  }
+
+  @error 'Unknown theme-type #{$theme-type}. Expected light, dark, or color-scheme';
+}
