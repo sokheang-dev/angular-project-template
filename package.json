@@ -1,6 +1,6 @@
 {
-  "name": "my-app",
-  "version": "0.0.0",
+  "name": "angular-project-template",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:my-app": "node dist/my-app/server/server.mjs",
+    "serve:ssr": "node dist/angular-project-template/server/server.mjs",
     "lint": "ng lint"
   },
   "prettier": {
