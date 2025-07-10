@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+// Custom Theming for Angular Material
+// For more information: https://material.angular.dev/guide/theming
+@use "@angular/material" as mat;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  color-scheme: light dark;
+
+  &.light {
+    color-scheme: light;
+  }
+
+  &.dark {
+    color-scheme: dark;
+  }
+}
